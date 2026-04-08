@@ -1,17 +1,17 @@
-# 📊 Data Pipeline Airflow Project
+# Data Pipeline Airflow Project
 
-## 📌 Description
+## Description
 Project ini membangun data pipeline end-to-end menggunakan Apache Airflow untuk mengolah data penjualan dari CSV menjadi data warehouse.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 Pipeline:
 CSV → Staging → Data Warehouse → Analysis
 
 ---
 
-## ⚙️ Tools
+## Tools
 - Python
 - Apache Airflow
 - PostgreSQL
@@ -19,7 +19,7 @@ CSV → Staging → Data Warehouse → Analysis
 
 ---
 
-## 🔄 Pipeline Flow
+## Pipeline Flow
 1. Load data ke staging
 2. Transform ke dimensi:
    - dim_time
@@ -30,18 +30,18 @@ CSV → Staging → Data Warehouse → Analysis
 
 ---
 
-## 📊 Features
+## Features
 - ETL Automation
 - Star Schema Data Warehouse
 - Data Cleaning & Transformation
 
 ---
 
-## 📁 Files
+## Files
 - `andika_pipeline.ipynb` → storytelling analysis
 - `airflow_dag.py` → pipeline utama
 
 ---
 
-## 👨‍💻 Author
+## Author
 Andika Indra.k
