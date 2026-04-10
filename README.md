@@ -16,6 +16,7 @@ CSV → Staging → Data Warehouse → Analysis
 - Apache Airflow
 - PostgreSQL
 - Pandas
+- Apache Superset
 
 ---
 
