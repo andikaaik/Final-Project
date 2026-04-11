@@ -7,7 +7,7 @@ import pandas as pd
 from psycopg2.extras import execute_batch
 
 
-# LOAD CSV → STAGING
+# CSV → STAGING
 
 def load_all_staging():
 
@@ -156,7 +156,6 @@ def load_all_staging():
     cur.close()
     conn.close()
 
-#===============
 # DAG
 
 with DAG(
@@ -172,7 +171,7 @@ with DAG(
         python_callable=load_all_staging
     )
 
-    # DIM TIME (GENERATE)
+    # DIM TIME
     dim_time = SQLExecuteQueryOperator(
         task_id='dim_time',
         conn_id='neon_db',
